@@ -4,28 +4,27 @@ void main() {
   runApp(MaterialApp());
 }
 
-class Quotegenerator extends StatelessWidget{
+class Quotegenerator extends StatelessWidget {
   const Quotegenerator({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Rndom Quota Generator",
-      home:Container(
-      ),
-    );
+    return MaterialApp(title: "Rndom Quota Generator", home: (QuoteScreen()));
   }
 }
 
-class QuoteScreen extend StatefulWidget{
+class QuoteScreen extends StatefulWidget {
   const QuoteScreen({super.key});
 
   @override
   State<QuoteScreen> createState() => _QuoteScreenState();
-  }
-  /// naming convansion like   page -> _pageState
+}
 
-  class _QuoteScreenState extends State<QuoteScreen>{
+/// naming convansion like   page -> _pageState
 
-      
+class _QuoteScreenState extends State<QuoteScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
+}
