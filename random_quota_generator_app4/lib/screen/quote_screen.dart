@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
 
 class QuoteScreen extends StatefulWidget {
   const QuoteScreen({super.key});
@@ -60,7 +61,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
           SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-              print("-------------Elevated button clicked-------------");
+              Logger().d("-------------Elevated button clicked-------------");
             },
             child: Text("click me "),
           ),
@@ -69,7 +70,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
 
           OutlinedButton(
             onPressed: () {
-                print("-------------Outline Button Clicked----------------");
+                Logger().d("-------------Outline Button Clicked----------------");
                 },
             child: Text("Click me 2"),
           ),
@@ -78,13 +79,13 @@ class _QuoteScreenState extends State<QuoteScreen> {
 
 
           TextButton(onPressed: (){ 
-            print("---------Text Button Clicked--------------");
+            Logger().d("---------Text Button Clicked--------------");
             },
              child: Text("click me")),
              FloatingActionButton(onPressed: (){
-              print("-----------floatingActionbutton---------------");
+              Logger().d("-----------floatingActionbutton---------------");
              },
-             child: Icon(Icons.flip))
+             child: Icon(Icons.abc_rounded))
         ],
       ),
     );
