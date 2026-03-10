@@ -19,23 +19,37 @@ class _QuoteScreenState extends State<QuoteScreen> {
         title: Center(
           child: Text(
             "Random Quote Generator",
-            style: TextStyle(color:Color.fromARGB(255, 251, 251, 101,),fontWeight: FontWeight.w900),
+            style: TextStyle(
+              color: Color.fromARGB(255, 251, 251, 101),
+              fontWeight: FontWeight.w900,
+            ),
           ),
         ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            "Life is not a matter of holding good cards, but of playing a poor hand well.",
-            style: TextStyle(
-              color: const Color.fromARGB(255, 36, 36, 33),
-              fontWeight: FontWeight.w900,
-              fontSize: 23,
-              fontStyle: FontStyle.italic,
+          Container(
+            height: 100,
+            width: 400,
+            color: Colors.yellowAccent,
+            child: Text(
+              "Life is not a matter of holding good cards, but of playing a poor hand well.",
+              style: TextStyle(
+                color: const Color.fromARGB(255, 36, 36, 33),
+                fontWeight: FontWeight.w900,
+                fontSize: 20,
+                fontStyle: FontStyle.italic,
+              ),
             ),
           ),
-          Text("-Robert Louis Stevenson"),
+          SizedBox(height: 50),
+          Container(
+            height: 20,
+            width: 210,
+            color: Colors.amber,
+            child: Text(" – Robert Louis Stevenson",style: TextStyle(fontWeight:FontWeight.bold),),
+          )
         ],
       ),
     );
