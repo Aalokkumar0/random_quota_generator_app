@@ -25,6 +25,7 @@ class QuoteScreen extends StatefulWidget {
 class _QuoteScreenState extends State<QuoteScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+    );
   }
 }
