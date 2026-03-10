@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class QuoteScreen extends StatefulWidget {
@@ -29,17 +30,20 @@ class _QuoteScreenState extends State<QuoteScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            height: 100,
-            width: 400,
-            color: Colors.yellowAccent,
-            child: Text(
-              "Life is not a matter of holding good cards, but of playing a poor hand well.",
-              style: TextStyle(
-                color: const Color.fromARGB(255, 36, 36, 33),
-                fontWeight: FontWeight.w900,
-                fontSize: 20,
-                fontStyle: FontStyle.italic,
+          Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: Container(
+              height: 100,
+              width: 400,
+              color: const Color.fromARGB(39, 162, 190, 222),
+              child: Text(
+                "Life is not a matter of holding good cards, but of playing a poor hand well.",
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 36, 36, 33),
+                  fontWeight: FontWeight.w900,
+                  fontSize: 21,
+                  fontStyle: FontStyle.italic,
+                ),
               ),
             ),
           ),
@@ -47,9 +51,40 @@ class _QuoteScreenState extends State<QuoteScreen> {
           Container(
             height: 20,
             width: 210,
-            color: Colors.amber,
-            child: Text(" – Robert Louis Stevenson",style: TextStyle(fontWeight:FontWeight.bold),),
-          )
+            color: const Color.fromARGB(74, 255, 193, 7),
+            child: Text(
+              " – Robert Louis Stevenson",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {
+              print("-------------Elevated button clicked-------------");
+            },
+            child: Text("click me "),
+          ),
+
+          SizedBox(height: 20),
+
+          OutlinedButton(
+            onPressed: () {
+                print("-------------Outline Button Clicked----------------");
+                },
+            child: Text("Click me 2"),
+          ),
+
+          SizedBox(height: 20,),
+
+
+          TextButton(onPressed: (){ 
+            print("---------Text Button Clicked--------------");
+            },
+             child: Text("click me")),
+             FloatingActionButton(onPressed: (){
+              print("-----------floatingActionbutton---------------");
+             },
+             child: Icon(Icons.flip))
         ],
       ),
     );
