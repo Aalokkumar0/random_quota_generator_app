@@ -60,6 +60,10 @@ class _QuoteScreenState extends State<QuoteScreen> {
           ),
           SizedBox(height: 20),
           ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.black,
+              foregroundColor: Colors.orange,
+            ),
             onPressed: () {
               Logger().d("-------------Elevated button clicked-------------");
             },
