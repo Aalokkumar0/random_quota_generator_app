@@ -73,6 +73,11 @@ class _QuoteScreenState extends State<QuoteScreen> {
           SizedBox(height: 20),
 
           OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              backgroundColor: Colors.orange,
+              foregroundColor: Colors.black,
+              
+            ),
             onPressed: () {
                 Logger().d("-------------Outline Button Clicked----------------");
                 },
