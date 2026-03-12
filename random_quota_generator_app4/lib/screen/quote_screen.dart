@@ -76,8 +76,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
           ),
 
           SizedBox(height: 20,),
-
-
+          
           TextButton(onPressed: (){ 
             Logger().d("---------Text Button Clicked--------------");
             },
