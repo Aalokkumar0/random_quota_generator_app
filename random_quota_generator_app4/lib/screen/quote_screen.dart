@@ -69,8 +69,8 @@ class _QuoteScreenState extends State<QuoteScreen> {
             child: Text("click me "),
           ),
 
-          SizedBox(height: 20),
-          // OutliedButton
+          /* SizedBox(height: 20),
+          //OutliedButton
           OutlinedButton(
             style: OutlinedButton.styleFrom(
               backgroundColor: Colors.orange,
@@ -102,8 +102,9 @@ class _QuoteScreenState extends State<QuoteScreen> {
             ),
             child: Text("Click Me"),
           ),
+          */
 
-          // floating Action button
+          
           
         ],
       ),
