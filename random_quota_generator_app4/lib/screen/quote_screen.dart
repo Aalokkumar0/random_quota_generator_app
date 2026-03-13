@@ -57,6 +57,8 @@ class _QuoteScreenState extends State<QuoteScreen> {
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
+          
+          /*
           SizedBox(height: 20),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -68,9 +70,10 @@ class _QuoteScreenState extends State<QuoteScreen> {
             },
             child: Text("click me "),
           ),
+          */
 
-          /* SizedBox(height: 20),
-          //OutliedButton
+          SizedBox(height: 20),
+          // OutliedButton
           OutlinedButton(
             style: OutlinedButton.styleFrom(
               backgroundColor: Colors.orange,
@@ -79,10 +82,12 @@ class _QuoteScreenState extends State<QuoteScreen> {
             onPressed: () {
               Logger().d("-Outline Button Clicked-");
             },
-            child: Text("Click me 2"),
+            child: Text("Read Quote"),
           ),
 
           SizedBox(height: 20),
+
+          /*
 
           // textButton
           TextButton(
@@ -102,9 +107,8 @@ class _QuoteScreenState extends State<QuoteScreen> {
             ),
             child: Text("Click Me"),
           ),
-          */
 
-          
+        */
           
         ],
       ),
