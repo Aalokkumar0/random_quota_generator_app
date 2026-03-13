@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 
@@ -71,33 +70,38 @@ class _QuoteScreenState extends State<QuoteScreen> {
           ),
 
           SizedBox(height: 20),
-
+          // OutliedButton
           OutlinedButton(
             style: OutlinedButton.styleFrom(
               backgroundColor: Colors.orange,
               foregroundColor: Colors.black,
-              
             ),
             onPressed: () {
-                Logger().d("-Outline Button Clicked-");
-                },
+              Logger().d("-Outline Button Clicked-");
+            },
             child: Text("Click me 2"),
           ),
 
-          SizedBox(height: 20,),
-          
-          TextButton(onPressed: (){ 
-            Logger().d("-Text Button Clicked-");
+          SizedBox(height: 20),
+
+          // textButton
+          TextButton(
+            onPressed: () {
+              Logger().d("-Text Button Clicked-");
             },
-             child: Text("click me")),
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.white,
+              backgroundColor: Colors.blue,
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
 
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
 
-
-             FloatingActionButton(
-              onPressed: (){
-              Logger().d("-floatingActionbutton-");
-             },
-             child: Icon(Icons.abc_rounded))
+              side: BorderSide(color: Colors.black, width: 2),
+            ),
+            child: Text("Click Me"),
+          ),
         ],
       ),
     );
