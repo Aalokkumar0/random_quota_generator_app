@@ -65,7 +65,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
               foregroundColor: Colors.orange,
             ),
             onPressed: () {
-              Logger().d("-------------Elevated button clicked-------------");
+              Logger().d("-Elevated button clicked-");
             },
             child: Text("click me "),
           ),
@@ -79,7 +79,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
               
             ),
             onPressed: () {
-                Logger().d("-------------Outline Button Clicked----------------");
+                Logger().d("-Outline Button Clicked-");
                 },
             child: Text("Click me 2"),
           ),
@@ -87,11 +87,15 @@ class _QuoteScreenState extends State<QuoteScreen> {
           SizedBox(height: 20,),
           
           TextButton(onPressed: (){ 
-            Logger().d("---------Text Button Clicked--------------");
+            Logger().d("-Text Button Clicked-");
             },
              child: Text("click me")),
-             FloatingActionButton(onPressed: (){
-              Logger().d("-----------floatingActionbutton---------------");
+
+
+
+             FloatingActionButton(
+              onPressed: (){
+              Logger().d("-floatingActionbutton-");
              },
              child: Icon(Icons.abc_rounded))
         ],
