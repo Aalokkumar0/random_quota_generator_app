@@ -6,10 +6,12 @@
       <excludeFolder url="file://$MODULE_DIR$/random_quota_generator_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/random_quota_generator_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/random_quota_generator_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutterdocs/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutterdocs/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutterdocs/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
-    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>
