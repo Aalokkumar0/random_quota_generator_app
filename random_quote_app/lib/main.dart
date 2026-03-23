@@ -8,7 +8,11 @@ void main() {
         appBar: AppBar(
           title: Text(
             "Read random quote",
-            style: TextStyle(color: Colors.amber),
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontSize: 34,
+            ),
           ),
         ),
         body: Center(
@@ -23,7 +27,6 @@ void main() {
                   color: Colors.white,
                   fontSize: 34,
                   fontWeight: FontWeight.w900,
-                  
                 ),
               ),
             ),
