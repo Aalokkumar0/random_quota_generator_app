@@ -12,11 +12,10 @@ void main() {
 
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(
-              bottom: Radius.circular(20)
+              bottom: Radius.circular(25)
             )
           ),
 
-          
           title: Text(
             "Read random quote",
             style: TextStyle(
@@ -24,6 +23,11 @@ void main() {
               fontWeight: FontWeight.bold,
               fontSize: 34,
               letterSpacing: 4
+            ),
+          ),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors:[Colors.amber, const Color.fromARGB(255, 206, 97, 97)], )
             ),
           ),
         ),
