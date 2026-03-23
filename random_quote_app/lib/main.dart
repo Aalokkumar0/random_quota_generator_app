@@ -7,12 +7,23 @@ void main() {
       title: "Random Quote ",
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: const Color.fromARGB(255, 192, 96, 221),
+          elevation:2,
+
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(
+              bottom: Radius.circular(20)
+            )
+          ),
+
+          
           title: Text(
             "Read random quote",
             style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
               fontSize: 34,
+              letterSpacing: 4
             ),
           ),
         ),
